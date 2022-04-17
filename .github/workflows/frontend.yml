@@ -19,6 +19,4 @@ jobs:
     - name: Run tests and collect coverage
       run: npm run test
     - name: Codecov go
-      run: curl -Os https://uploader.codecov.io/latest/macos/codecov
-      run: chmod +x codecov
-      run: ./codecov
+      run: curl -Os https://uploader.codecov.io/latest/macos/codecov | chmod +x codecov | ./codecov
